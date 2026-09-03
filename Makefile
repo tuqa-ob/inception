@@ -1,4 +1,6 @@
 all:
+	sudo mkdir -p /home/tobaidat/data/mariadb
+	sudo mkdir -p /home/tobaidat/data/wordpress
 	docker compose -f srcs/docker-compose.yml up -d --build
 
 build:
